@@ -1,16 +1,13 @@
 package cage;
 
 import animal.Animal;
-import animal.Lion;
 import animal.Wolf;
-import comparator.LionComparator;
 import comparator.WolfComparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
-public class WolfCage implements AnimalCage {
+public class WolfCage implements AnimalCage<Wolf> {
 
 
     private int garbage;
@@ -30,7 +27,7 @@ public class WolfCage implements AnimalCage {
     }
 
     @Override
-    public int addAnimalToCage(Animal newWolf) {
+    public int addAnimalToCage(Wolf newWolf) {
         if (newWolf instanceof Wolf) {
             this.animalsInCage.add((Wolf) newWolf);
         }

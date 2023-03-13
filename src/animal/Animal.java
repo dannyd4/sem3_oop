@@ -19,7 +19,7 @@ public abstract class Animal {
     }
 
     public int getOld() {
-        return old;
+        return this.old;
     }
 
     public int getWeight() {

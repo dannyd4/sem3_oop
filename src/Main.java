@@ -1,5 +1,6 @@
 import animal.Lion;
 import animal.Wolf;
+import animalUtils.AnimalUtils;
 import cage.LionCage;
 import cage.WolfCage;
 import factory.LionFactory;
@@ -35,12 +36,13 @@ public class Main {
         System.out.println(cage2.getAllAnimalsInCage());
         System.out.println();
         System.out.println("sortedByOld");
-        Collections.sort(cage2.getAllAnimalsInCage());
+        AnimalUtils.sortAnimals(cage2.getAllAnimalsInCage());
+//        Collections.sort(cage2.getAllAnimalsInCage());
         System.out.println(cage2.getAllAnimalsInCage());
-        System.out.println();
-        System.out.println("sortedWeightAndOld");
-        cage2.sortWolfsByWeightAndOld();
-        System.out.println(cage2.getAllAnimalsInCage());
+//        System.out.println();
+//        System.out.println("sortedWeightAndOld");
+//        cage2.sortWolfsByWeightAndOld();
+//        System.out.println(cage2.getAllAnimalsInCage());
     }
 
 }

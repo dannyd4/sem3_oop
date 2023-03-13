@@ -7,7 +7,7 @@ import comparator.LionComparator;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class LionCage implements AnimalCage {
+public class LionCage implements AnimalCage<Lion> {
 
     private int garbage;
     private int foodInCage;
@@ -40,7 +40,7 @@ public class LionCage implements AnimalCage {
     }
 
     @Override
-    public int addAnimalToCage(Animal newlion) {
+    public int addAnimalToCage(Lion newlion) {
         if (newlion instanceof Lion) {
             this.animalsInCage.add((Lion) newlion);
         }
